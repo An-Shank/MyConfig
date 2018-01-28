@@ -1,0 +1,156 @@
+! URxvt
+
+! General settings
+URxvt.saveLines: 2000
+URxvt.scrollBar: False
+URxvt.scrollstyle: rxvt
+URxvt.termName: xterm-256color
+URxvt.urgentOnBell: True
+URxvt.cursorBlink: True
+URxvt*transparent: True
+URxvt*shading: 10
+Urxvt.borderLess: True
+
+! Extensions
+URxvt.iso14755: False
+URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select,fullscreen
+URxvt.urlLauncher: xdg-open
+URxvt.urlButton: 1
+URxvt.underlineURLs: True
+
+!URxvt.copyCommand: urxvt -pe selection-to-clipboard
+URxvt.copyCommand:  xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+
+! Keybindings
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.Mod4-c: perl:clipboard:copy
+URxvt.keysym.Mod4-v: perl:clipboard:paste
+URxvt.keysym.Mod4-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.C-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.keysym.F11: perl:fullscreen:switch
+
+! Fonts
+
+!Courier
+!URxvt.font: xft:Courier-10
+
+!Inconsolata
+URxvt.font: xft:Inconsolata-10
+URxvt.boldFont: xft:Inconsolata-10
+URxvt.letterSpace: -1
+
+!Inconsolata-g
+!URxvt.font: xft:InconsolataG-10
+!URxvt.letterSpace: -1
+
+!Anonymous Pro
+!URxvt.font: xft:Anonymous\ Pro-12
+!URxvt.letterSpace: -1
+
+!Monaco
+!URxvt.font: xft:Monaco-10
+!URxvt.letterSpace: -1
+
+!Droid Sans Mono
+!URxvt.font: xft:Droid Sans Mono-10
+!URxvt.letterSpace: -1
+
+!DejaVu Sans
+!URxvt.font: xft:DejaVu Sans Mono-10
+!URxvt.letterSpace: -1
+
+!Manospace
+!URxvt.font: xft:Monospace-10
+!URxvt.letterSpace: -1
+
+!Terminus
+!URxvt.font: xft:Terminus-10
+
+! special
+*.foreground:   #eceff1
+*.background:   #263238
+*.cursorColor:  #eceff1
+
+! black
+*.color0:       #263238
+*.color8:       #37474f
+
+! red
+*.color1:       #ff9800
+*.color9:       #ffa74d
+
+! green
+*.color2:       #8bc34a
+*.color10:      #9ccc65
+
+! yellow
+*.color3:       #ffc107
+*.color11:      #ffa000
+
+! blue
+*.color4:       #03a9f4
+*.color12:      #81d4fa
+
+! magenta
+*.color5:       #e91e63
+*.color13:      #ad1457
+
+! cyan
+*.color6:       #009688
+*.color14:      #26a69a
+
+! white
+*.color7:       #cfd8dc
+*.color15:      #eceff1
+
+
+! Tango theme
+
+!*.background: #0A0406
+!*.foreground: #E6D6DB
+!*.cursorColor: #E6D6DB
+
+! black
+!*.color0	:       #13080C
+!*.color8	:       #DF4D91
+
+! red
+!*.color1	:       #221218
+!*.color9	:       #B7844A
+
+! green
+!*.color2	:      #39212B
+!*.color10	:      #D29E68
+
+! yellow
+!*.color3	:      #593744
+!*.color11	:      #559787
+
+! blue
+!*.color4	:      #825264
+!*.color12	:      #71B7D7
+
+! magenta
+!*.color5	:      #B3728B
+!*.color13	:      #A87CC9
+
+! cyan
+!*.color6	:      #CCA7B4
+!*.color14	:      #52859D
+
+! white
+!*.color7	:      #EBDFE3
+!*.color15	:      #BB8D5E
+
+rofi.color-window: argb:EE000000, argb:EE000000, argb:EE000000
+rofi.color-normal: argb:00000000, #00DEDE, argb:00000000, #DEDE00
+rofi.location: 0
+rofi.width: 100
+rofi.padding: 300
+rofi.hide-scrollbar: True
